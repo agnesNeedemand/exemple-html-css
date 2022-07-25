@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Html</title>
+    <meta charset="UTF-8" />
+    <style>
+      table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 250px;
+      }
+      td {
+        border: 1px solid black;
+      }
+      .bleu {
+        background-color: #99ccff;
+        text-align: center;
+      }
+      .rouge {
+        background-color: tomato;
+      }
+      tfoot {
+        background-color: teal;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <!--<colgroup span="2"></colgroup>
+            <colgroup class="rouge"></colgroup>-->
+      <colgroup>
+        <col span="2" class="bleu" />
+        <col class="rouge" />
+      </colgroup>
+      <thead>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>**</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>**</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+          <td>**</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+          <td>**</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
