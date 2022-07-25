@@ -36,7 +36,7 @@
       }
     </style>
     <script type="text/javascript">
-      function dosetItem() {
+      function doSetItem() {
         var produit = document.getElementById("prod").value;
         var data = document.getElementById("q").value;
         localStorage.setItem(produit, data);
@@ -44,12 +44,12 @@
         document.getElementById("q").value = "";
         afficher();
       }
-      function dogetItem() {
+      function doGetItem() {
         var produit = document.getElementById("prod").value;
         document.getElementById("q").value = localStorage.getItem(produit);
         afficher();
       }
-      function doremoveItem() {
+      function doRemoveItem() {
         var produit = document.getElementById("prod").value;
         localStorage.removeItem(produit);
         document.getElementById("prod").value = "";
@@ -100,9 +100,9 @@
             <input id="q" name="q" size="30" placeholder="Quantité" />
           </p>
           <p>
-            <input type="button" value="Ajouter" onclick="dosetItem()" />
-            <input type="button" value="Modifier" onclick="dogetItem()" />
-            <input type="button" value="Supprimer" onclick="doremoveItem()" />
+            <input type="button" value="Ajouter" onclick="doSetItem()" />
+            <input type="button" value="Modifier" onclick="doGetItem()" />
+            <input type="button" value="Supprimer" onclick="doRemoveItem()" />
           </p>
         </div>
       </form>
