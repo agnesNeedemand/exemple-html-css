@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemple de formulaire</title>
+  </head>
+  <body>
+    <h1>Exemple de Formulaire</h1>
+    <form action="">
+      <fieldset>
+        <legend>Votre identité</legend>
+          <label>Nom</label>
+          <input name="nom" />
+          <br>
+          <label>Adresse</label>
+          <textarea name="adresse"></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Selectionner un mode de paiement (unique)</legend>
+          <input type="radio" id="cheque" name="mode" value="cheque" checked />
+          <label for="cheque">cheque</label>
+        </div>
+        <div>
+          <input type="radio" id="carte" name="mode" value="carte" />
+          <label for="carte">carte</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Choissez votre garniture (multiple)</legend>
+        <div>
+            <input type="checkbox" name="n1" id="id1" />
+          <label for="id1">Mozarella</label>
+        </div>
+          <div>
+            <input type="checkbox" name="n2" id="id2"/>
+        <label for="id2">Parmesan</label>
+
+          </div>
+        <div>
+            <input type="checkbox" name="n3" id="id3"/>
+        <label for="id3">Jambon</label>
+        </div>
+        <div>
+            <input type="checkbox" name="n4" id="id4"/>
+            <label for="id4">Chorizo</label>
+        </div>
+        <div>
+            <input type="checkbox" name="n5" id="id5"/>
+            <label for="id5">Aubergine</label>
+        </div>
+        <div>
+            <input type="checkbox" name="n6" id="id6"/>
+            <label for="id6">Poulet</label>
+        </div>
+        <div>
+            <input type="checkbox" name="n7" id="id7"/>
+            <label for="id7">Boulette de viande</label>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
