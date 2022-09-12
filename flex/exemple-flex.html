@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX</title>
+    <style>
+      #flex {
+        display: flex;
+        border: 2px #4891ef solid;
+        background-color: #8080809e;
+        width: 400px;
+        font-size: 100%;
+      }
+      #flex > div {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        background-color: rebeccapurple;
+        text-align: center;
+        color: white;
+        font-size: 3rem;
+      }
+      #flex > div:nth-child(2) {
+        height: 110px;
+        font-size: 2rem;
+      }
+      #flex > div:nth-child(4) {
+        height: 90px;
+        font-size: 4rem;
+      }
+
+
+    </style>
+</head>
+<body>
+    <div id="flex">
+      <div><span>1</span></div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+</body>
+</html>
